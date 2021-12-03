@@ -1,12 +1,10 @@
 import Head from "next/head";
-import Image from "next/image";
 import Header from "../components/Header";
 import Nav from "../components/Nav";
 import Results from "../components/Results";
 import requests from "../utils/requests";
 
 export default function Home({ results }) {
-  // console.log(results);
 	return (
 		<div>
 			<Head>
@@ -15,13 +13,10 @@ export default function Home({ results }) {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			{/* header */}
 			<Header />
 
-			{/* nav */}
 			<Nav />
 
-			{/* results */}
 			<Results results={results} />
 		</div>
 	);
