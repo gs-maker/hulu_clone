@@ -15,12 +15,13 @@ const Thumbnail = forwardRef(({ result }, ref) => {
 				width={1920}
 				height={1080}
 				alt={result.title}
+				priority={true}
 			/>
 			<div className="p-2">
 				<p className="truncate max-w-md">{result.overview}</p>
-				<h2 className="mt-1 text-2xl text-white transition-all duration-100 ease-in-out group-hover:font-bold">
+				<h4 className="mt-1 text-2xl text-white transition-all duration-100 ease-in-out group-hover:font-bold">
 					{result.title || result.original_name}
-				</h2>
+				</h4>
 				<p className="flex items-center opacity-0 group-hover:opacity-100">
 					{result.media_type && `${result.media_type} |`}
 					{""}
